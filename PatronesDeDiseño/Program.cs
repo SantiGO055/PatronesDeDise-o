@@ -10,9 +10,9 @@ using PatronesDeDiseño.Singleton;
 #endregion
 
 #region Prototype
-Animal oAnimal = new Animal{ Nombre = "Oveja" , Patas = 4};
-Animal oAnimalClonado = oAnimal.Clone() as Animal;
-oAnimalClonado.Patas = 5;
+var oAnimal = new Animal{ Nombre = "Oveja" , Patas = 4};
+var oAnimalClonado = oAnimal.Clone() as Animal;
+oAnimalClonado!.Patas = 5;
 Console.WriteLine(oAnimalClonado.Patas);
 Console.WriteLine(oAnimal.Patas);
 #endregion
