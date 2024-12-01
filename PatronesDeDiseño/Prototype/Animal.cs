@@ -5,8 +5,10 @@ public class Animal : ICloneable
     public int Patas { get; set; }
     public string Nombre { get; set; }
     
-    //Clonacion superficial - shallow: Clona solo atributos de esta clase basicos no objetos complejos
-    
+    /// <summary>
+    /// Clonacion superficial - Shallow:
+    /// </summary>
+    /// <returns>Objeto clonado con sus atributos</returns>
     public object Clone()
     {
         return MemberwiseClone();
